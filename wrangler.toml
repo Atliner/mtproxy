@@ -1,0 +1,13 @@
+# پیکربندی Wrangler برای استقرار روی Cloudflare Workers
+# مستندات: https://developers.cloudflare.com/workers/wrangler/configuration/
+
+name = "tg-mtproto-relay"
+main = "worker.js"
+compatibility_date = "2026-09-01"
+
+# برای استفاده از cloudflare:sockets لازم نیست پلن پولی داشته باشید؛
+# طرح رایگان هم اجازه‌ی اتصال TCP خروجی را می‌دهد.
+
+# متغیرهای اختیاری:
+# [vars]
+# ALLOW_WS_BRIDGE = "1"   # برای غیرفعال‌کردن پل تلگرام وب مقدار را "0" بگذارید
